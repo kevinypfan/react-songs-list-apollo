@@ -35,6 +35,7 @@ class AddSong extends Component {
   }
 
   render() {
+    console.log(this.props)
     const requireOption = [
       <div className="field">
         <label>firstName:</label>

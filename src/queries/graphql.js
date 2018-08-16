@@ -1,5 +1,20 @@
 import gql from 'graphql-tag'
 
+export const SONG_ADDED_SUBSCRIPTION = gql`
+subscription onSongAdded {
+  songAdded {
+    id
+    title
+    votes
+    singer {
+      id
+      firstName
+      lastName
+    }
+  }
+}
+`;
+
 export const GET_SONGS = gql`
 {
   songs {
